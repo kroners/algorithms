@@ -1,2 +1,5 @@
-# algorithms
-Listing different kind of Algorithms
+# Algorithms
+
+Listing different kind of Algorithms:
+
+- 10by10: creating a 10 X 10 array displaying random string of letters
