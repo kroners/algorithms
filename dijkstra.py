@@ -1,4 +1,4 @@
-print "Dijkstra's Algorithm"
+print("Dijkstra's Algorithm")
 
 # Overview: Finding the shortest path from nodes in a graph
 # The algorithm finds the shortest paths between nodes from a single node ot a single destination
