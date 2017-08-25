@@ -1,4 +1,4 @@
-class ELGraph() {
+class ELGraph {
   constructor() {
     this.index = 0;
     this.vertices = [];
