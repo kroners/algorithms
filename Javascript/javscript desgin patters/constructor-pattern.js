@@ -1,11 +1,11 @@
 // constructor is special method to initialize a newly created object once memory has been allocated for it
 
 // The three common ways to create new objects in JavaScript are as follows:
-var newObject = {};
+let newObject = {};
 // or
-var newObject = Object.create(Object.prototype);
+let newObject = Object.create(Object.prototype);
 // or
-var newObject = new Object();
+let newObject = new Object();
 
 // four ways in which keys and values can then be assigned to an object:
 
@@ -13,13 +13,13 @@ var newObject = new Object();
 // set
 newObject.someKey = "Hola a todos";
 // get
-var value = newObject.someKey;
+let value = newObject.someKey;
 
 // 2. Square bracket syntax;
 // set
-newObject.["otherKey"] = "Hola otra vez";
+newObject["otherKey"] = "Hola otra vez";
 // get
-var value2 = newObject.otherKey;
+let value2 = newObject.otherKey;
 
 // 3. Object.defineProperty
 // set property
@@ -31,8 +31,8 @@ Object.defineProperty (newObject, "thirdKey", {
 });
 
 // Otra forma de escribir la definicion de objeto por propiedad seria:
-var defineProp = function (obj, key, value) {
-	var config = {
+let defineProp = function (obj, key, value) {
+	let config = {
 		value: value,
 		writable: true,
 		enumerable: true,
@@ -41,7 +41,7 @@ var defineProp = function (obj, key, value) {
 	Object.defineProperty(obj, key, config);
 }
 // usando lineas superiores para crear una nueva persona
-var person = Object.create(Object.prototype);
+let person = Object.create(Object.prototype);
 defineProp(person, "car", "Delorean");
 defineProp(person, "greeting", "Hi Mr.");
 
@@ -65,8 +65,8 @@ function Car(model, year, miles) {
 }
 
 // usage
-var civic = new Car("Honda Civic", 2009, 20000);
-var mondeo = new Car("Ford Mondeo", 2010, 5000);
+let civic = new Car("Honda Civic", 2009, 20000);
+let mondeo = new Car("Ford Mondeo", 2010, 5000);
 
 console.log(civi.toString());
 console.log(mondeo.toString());
@@ -86,8 +86,8 @@ Car.prototype.toString = function () {
 };
  
 // Usage:
-var civic = new Car( "Honda Civic", 2009, 20000 );
-var mondeo = new Car( "Ford Mondeo", 2010, 5000 );
+let civic = new Car( "Honda Civic", 2009, 20000 );
+let mondeo = new Car( "Ford Mondeo", 2010, 5000 );
  
 console.log( civic.toString() );
 console.log( mondeo.toString() );
