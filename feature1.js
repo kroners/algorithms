@@ -2,3 +2,5 @@
 const feature = 'newFeature1'
 
 const updatingFeatureFileOnMain = 'main'
+
+const updateFeature = '-Hi';
